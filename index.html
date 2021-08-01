@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da cobrinha</title>
+    <script src="js/jogo.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="div">
+        <label for="velocidade">Velocidade:</label>
+        <input type="range" id="velocidade" min="30" max="120" value="100" step="1" onchange="setVelocidade(this.value)"
+            class="range">
+    </div>
+    <div class="div">
+        <label id="pontuacao">Pontuação: 0 pontos</label>
+    </div>
+    <canvas id="canvas" width="0" height="0"></canvas>
+</body>
+
+</html>
